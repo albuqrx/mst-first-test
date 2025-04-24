@@ -32,6 +32,11 @@ body {
   padding: 0 15px;
 }
 
+.header__logo-image {
+  width: 200px;
+  aspect-ratio: 1201 /  631;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -65,8 +70,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.header__menu-item:hover {
-  color: rgb(69, 114, 177);
+a:hover {
+  color: #d1aa53;
 }
 
 .header__container {
@@ -86,6 +91,9 @@ button, a {
   cursor: pointer;
 }
 
+button:hover {
+  background: #d1aa53;
+}
 
 @media (max-width: 1500px) {
   .header {

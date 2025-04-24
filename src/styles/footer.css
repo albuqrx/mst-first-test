@@ -41,6 +41,10 @@
   font-weight: 100;
 }
 
+.footer__logo {
+  width: 146px;
+  aspect-ratio: 1201 /  631;
+}
 
 .footer__stretch-item {
   flex-grow: 1;
