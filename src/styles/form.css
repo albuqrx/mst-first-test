@@ -1,0 +1,142 @@
+
+.request-form {
+  --height-form: 4em;
+  margin-bottom: 100px;
+}
+
+.request-form__container {
+  width: 85%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-gap: 2rem;
+  color: black;
+  background: white;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+
+.request-form__content {
+  padding: 4rem 0 4rem 8%;
+
+}
+
+.request-form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.request-form__description {
+  font-size: 54px;
+  margin-bottom: 1em;
+  font-family: 'Prata', sans-serif;
+  font-weight: 100;
+  color: #38535D;
+}
+
+.request-form__name, .request-form__email {
+  
+  width: 100%;
+  height: var(--height-form);
+  margin-bottom: 1em;
+  padding-left: 1em;
+  font-size: 24px;
+  border-color: #D6D6D6;
+  border-radius: 4px;
+}
+
+
+.request-form__label {
+  font-size: 19px;
+  margin-bottom: 1em;
+
+}
+
+.request-form__button {
+  width: 100%;
+  height: 4em;
+  color: white;
+  background-color: #282829;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.request-form__checkbox {
+  width: 24px;
+  aspect-ratio: 1;
+  vertical-align: middle;
+
+}
+
+.request-form__images {
+  position: relative;
+}
+
+.request-form__image-back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 30px 30px 0;
+
+}
+
+.request-form__image-front {
+  --top-offset: 40px;
+
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  top: calc(var(--top-offset) * -1);
+  height: calc(100% + var(--top-offset));
+  object-fit: contain;
+  object-position: bottom center;
+  z-index: 2;
+  max-width: 70%;
+
+}
+
+
+@media (max-width: 1200px ) {
+  .request-form__description {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .request-form {
+    --height-form: 2em;
+    margin-bottom: 40px;
+  }
+
+  .request-form__images {
+    display: none;
+  }
+
+  .request-form__container {
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+
+  .request-form__content {
+    padding: 2rem 8% 2rem 8%;
+  }
+
+  .request-form__button {
+    font-size: 16px;
+    height: 4em;
+  }
+
+  .request-form__description {
+    font-size: 24px;
+  }
+}
